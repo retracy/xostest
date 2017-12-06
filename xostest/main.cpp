@@ -3,14 +3,13 @@
 #include <memory>
 #include <algorithm>
 #include "Citizen.h"
+#include "Soldier.h"
 using namespace std;
 
 int main()
 {
-	cout << "hello again from xostest!" << endl;
-
 	vector<shared_ptr<Citizen>> citizens{
-		make_shared<Citizen>("Bob", "Tracy", 10),
+		make_shared<Soldier>("Bob", "Tracy", 1, "captain"),
 		make_shared<Citizen>("Nemo", "Nobody", 2)
 	};
 

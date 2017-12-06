@@ -13,7 +13,7 @@ public:
 	{
 	}
 
-	string Information()
+	virtual string Information()
 	{
 		return string(first + " " + last + " " + to_string(id));
 	}
